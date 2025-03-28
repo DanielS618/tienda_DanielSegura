@@ -28,6 +28,7 @@
     </scm>
     <properties>
         <java.version>21</java.version>
+        <maven.compiler.release>22</maven.compiler.release>
     </properties>
     <dependencies>
         <dependency>
@@ -102,6 +103,7 @@
                         <path>
                             <groupId>org.projectlombok</groupId>
                             <artifactId>lombok</artifactId>
+                            <version>1.18.36</version>
                         </path>
                     </annotationProcessorPaths>
                     <compilerArgs>
@@ -123,6 +125,5 @@
             </plugin>
         </plugins>
     </build>
-
 
 </project>

@@ -20,7 +20,9 @@ public class CategoriaController {
     @RequestMapping("/Listado")
     public String page(Model model) {
         var categorias = categoriaService.getCategorias(false);
-        model.addAttribute("attribute", "value");
+        
+        model.addAttribute("categoris", categorias);
+        model.addAttribute("totalCategorias",categorias.size());
         return "/categoria/listado";
     }
 
